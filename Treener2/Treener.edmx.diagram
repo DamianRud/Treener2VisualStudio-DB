@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="577caa3510b94a0485de529f2422287f" Name="Diagram1" ZoomLevel="90" >
+        <EntityTypeShape EntityType="Treener.SpordiLiikme" Width="1.5" PointX="4" PointY="1.125" />
+        <EntityTypeShape EntityType="Treener.Voistlus" Width="1.5" PointX="8.25" PointY="2.75" />
+        <EntityTypeShape EntityType="Treener.Treeniregistrerimine" Width="1.5" PointX="3.875" PointY="4" />
+        <EntityTypeShape EntityType="Treener.LiikmelisusePaketti" Width="1.5" PointX="6.625" PointY="3.75" />
+        <EntityTypeShape EntityType="Treener.Treener" Width="1.5" PointX="3.5" PointY="6.875" />
+        <EntityTypeShape EntityType="Treener.Treening" Width="1.5" PointX="6.875" PointY="6.125" />
+        <EntityTypeShape EntityType="Treener.Saal" Width="1.5" PointX="3.375" PointY="9.25" />
+        <EntityTypeShape EntityType="Treener.Liikvoistluses" Width="1.5" PointX="6.875" PointY="0.5" />
+        <EntityTypeShape EntityType="Treener.Spordiala" Width="1.5" PointX="10.125" PointY="2.875" />
+        <EntityTypeShape EntityType="Treener.Osalemine" Width="1.5" PointX="10.375" PointY="0.625" />
+        <EntityTypeShape EntityType="Treener.ToodeID" Width="1.5" PointX="12.75" PointY="3.625" />
+        <EntityTypeShape EntityType="Treener.Ost" Width="1.5" PointX="10.25" PointY="5.75" />
+        <EntityTypeShape EntityType="Treener.OstuRida" Width="1.5" PointX="12.875" PointY="6.375" />
+        <AssociationConnector Association="Treener.SpordiLiikmeTreeniregistrerimine" />
+        <AssociationConnector Association="Treener.SpordiLiikmeLiikvoistluses" />
+        <AssociationConnector Association="Treener.VoistlusLiikvoistluses" />
+        <AssociationConnector Association="Treener.SaalTreening" />
+        <AssociationConnector Association="Treener.TreenerTreening" />
+        <AssociationConnector Association="Treener.TreeningTreeniregistrerimine" />
+        <AssociationConnector Association="Treener.SpordiLiikmeLiikmelisusePaketti" />
+        <AssociationConnector Association="Treener.SpordiLiikmeLiikvoistluses1" />
+        <AssociationConnector Association="Treener.SpordialaVoistlus" />
+        <AssociationConnector Association="Treener.LiikvoistlusesOsalemine" />
+        <AssociationConnector Association="Treener.ToodeIDOst" />
+        <AssociationConnector Association="Treener.OstOstuRida" />
+        <AssociationConnector Association="Treener.ToodeIDOstuRida" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
