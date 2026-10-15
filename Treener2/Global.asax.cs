@@ -6,7 +6,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
-
+using System.Data.Entity;
 namespace Treener2
 {
     public class Global : HttpApplication

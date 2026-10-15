@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="577caa3510b94a0485de529f2422287f" Name="Diagram1" ZoomLevel="90" >
+      <Diagram DiagramId="577caa3510b94a0485de529f2422287f" Name="Diagram1" ZoomLevel="106" >
         <EntityTypeShape EntityType="Treener.SpordiLiikme" Width="1.5" PointX="4" PointY="1.125" />
         <EntityTypeShape EntityType="Treener.Voistlus" Width="1.5" PointX="8.25" PointY="2.75" />
         <EntityTypeShape EntityType="Treener.Treeniregistrerimine" Width="1.5" PointX="3.875" PointY="4" />
@@ -12,7 +12,7 @@
         <EntityTypeShape EntityType="Treener.Treener" Width="1.5" PointX="3.5" PointY="6.875" />
         <EntityTypeShape EntityType="Treener.Treening" Width="1.5" PointX="6.875" PointY="6.125" />
         <EntityTypeShape EntityType="Treener.Saal" Width="1.5" PointX="3.375" PointY="9.25" />
-        <EntityTypeShape EntityType="Treener.Liikvoistluses" Width="1.5" PointX="6.875" PointY="0.5" />
+        <EntityTypeShape EntityType="Treener.Liikvoistluses" Width="1.5" PointX="6.625" PointY="0.5" />
         <EntityTypeShape EntityType="Treener.Spordiala" Width="1.5" PointX="10.125" PointY="2.875" />
         <EntityTypeShape EntityType="Treener.Osalemine" Width="1.5" PointX="10.375" PointY="0.625" />
         <EntityTypeShape EntityType="Treener.ToodeID" Width="1.5" PointX="12.75" PointY="3.625" />
