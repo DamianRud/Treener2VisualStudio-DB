@@ -52,6 +52,7 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact3">Spordialad</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Treeningud">Treeningud</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Liikmed">Liikmed</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Treeniregistreerimine">Registreerimine</a></li>
                     </ul>
                 </div>
             </div>
