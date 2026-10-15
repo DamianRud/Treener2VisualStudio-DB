@@ -48,7 +48,8 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Avaleht</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Töölaud</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Ametid</a></li>
+                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact2">Ametitöötajad</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact3">Spordialad</a></li>
                     </ul>
                 </div>
             </div>
@@ -58,7 +59,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Leht tegi Damian Rud</p>
             </footer>
         </div>
     </form>
