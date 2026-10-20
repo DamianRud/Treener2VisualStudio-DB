@@ -11,7 +11,7 @@ namespace Treener2
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class Treeniregistrerimine
     {
         public int RegistrerimineID { get; set; }
@@ -19,7 +19,7 @@ namespace Treener2
         public int TreeningID { get; set; }
         public System.DateTime registreriminekuupaev { get; set; }
         public string Status { get; set; }
-    
+
         public virtual SpordiLiikme SpordiLiikme { get; set; }
         public virtual Treening Treening { get; set; }
     }
