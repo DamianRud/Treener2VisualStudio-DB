@@ -133,6 +133,7 @@
     <Content Include="Global.asax" />
     <Content Include="Liikmed.aspx" />
     <Content Include="Osalejad.aspx" />
+    <Content Include="Paketid.aspx" />
     <Content Include="Saalid.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -279,6 +280,13 @@
     </Compile>
     <Compile Include="OstuRida.cs">
       <DependentUpon>Treener.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Paketid.aspx.cs">
+      <DependentUpon>Paketid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paketid.aspx.designer.cs">
+      <DependentUpon>Paketid.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Saal.cs">

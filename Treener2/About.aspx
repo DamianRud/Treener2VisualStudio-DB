@@ -3,17 +3,10 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h2>Töölaud</h2>
-    <p>Spordiklubi haldussüsteem</p>
+    <h1>Tere tulemast minu veebilehele!</h1>
 
-    <h3>Haldamine</h3>
+    <p>See on minu spordiklubi veebileht.</p>
 
-    <ul>
-        <li><a runat="server" href="~/Contact2">Ametitöötajad</a> – treenerite haldamine</li>
-        <li><a runat="server" href="~/Contact3">Spordialad</a> – spordialade haldamine</li>
-        <li><a runat="server" href="~/Treeningud">Treeningud</a> – treeningute haldamine</li>
-        <li><a runat="server" href="~/Liikmed">Liikmed</a> – spordiklubi liikmete haldamine</li>
-        <li><a runat="server" href="~/Treeniregistreerimine">Registreerimine</a> – treeningutele registreerimine</li>
-    </ul>
+    <p>Siin saab vaadata spordiklubi liikmeid, treenereid ja liikmelisuse pakette.</p>
 
 </asp:Content>

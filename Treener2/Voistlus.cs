@@ -11,7 +11,7 @@ namespace Treener2
 {
     using System;
     using System.Collections.Generic;
-
+    
     public partial class Voistlus
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,14 +19,14 @@ namespace Treener2
         {
             this.Liikvoistluses = new HashSet<Liikvoistluses>();
         }
-
+    
         public int VoistlusID { get; set; }
         public string nimi { get; set; }
         public System.DateTime kuupaev { get; set; }
         public string asukoht { get; set; }
         public string kirjeldus { get; set; }
         public int SpordialaID { get; set; }
-
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Liikvoistluses> Liikvoistluses { get; set; }
         public virtual Spordiala Spordiala { get; set; }

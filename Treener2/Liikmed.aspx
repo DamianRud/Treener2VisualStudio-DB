@@ -7,27 +7,36 @@
     <h2>Spordiklubi liikmete nimekiri</h2>
     <br />
 
-    <!-- Таблица просмотра, изменения и удаления членов клуба -->
     <asp:GridView ID="GridView1" runat="server"
         AutoGenerateColumns="False"
         DataKeyNames="LiikID"
         DataSourceID="SqlDataSourceLiikmed"
         EmptyDataText="Liikmeid ei leitud.">
         <Columns>
-            <asp:CommandField ShowDeleteButton="True"
+            <asp:CommandField
+                ShowDeleteButton="True"
                 ShowEditButton="True"
+                EditText="Muuda"
+                DeleteText="Kustuta"
+                UpdateText="Salvesta"
+                CancelText="Tühista"
                 CausesValidation="False" />
 
             <asp:BoundField DataField="LiikID" HeaderText="ID" ReadOnly="True" SortExpression="LiikID" />
             <asp:BoundField DataField="eesnimi" HeaderText="Eesnimi" SortExpression="eesnimi" />
             <asp:BoundField DataField="perekonnanimi" HeaderText="Perekonnanimi" SortExpression="perekonnanimi" />
-            <asp:BoundField DataField="sunniaeg" HeaderText="Sunniaeg" SortExpression="sunniaeg" />
+
+            <asp:BoundField DataField="sunniaeg"
+                HeaderText="Sünniaeg"
+                SortExpression="sunniaeg"
+                DataFormatString="{0:dd.MM.yyyy}"
+                HtmlEncode="False" />
+
             <asp:BoundField DataField="epost" HeaderText="E-post" SortExpression="epost" />
             <asp:BoundField DataField="telefonnumber" HeaderText="Telefon" SortExpression="telefonnumber" />
         </Columns>
     </asp:GridView>
 
-    <!-- Источник данных для таблицы -->
     <asp:SqlDataSource ID="SqlDataSourceLiikmed" runat="server"
         ConnectionString="<%$ ConnectionStrings:Treener2ConnectionString1 %>"
         SelectCommand="SELECT [LiikID], [eesnimi], [perekonnanimi], [sunniaeg], [epost], [telefonnumber] FROM [SpordiLiikmeSet]"
@@ -53,7 +62,6 @@
     <h2>Uue liikme lisamine</h2>
     <br />
 
-    <!-- Форма добавления нового члена клуба -->
     <asp:DetailsView ID="DetailsView1" runat="server"
         AutoGenerateRows="False"
         DataKeyNames="LiikID"
@@ -77,8 +85,7 @@
                         runat="server"
                         ControlToValidate="txtEesnimi"
                         ErrorMessage="Sisesta eesnimi!"
-                        ForeColor="Red"
-                        Display="Dynamic"
+                        Display="None"
                         ValidationGroup="LisaLiige"></asp:RequiredFieldValidator>
                 </InsertItemTemplate>
             </asp:TemplateField>
@@ -92,16 +99,16 @@
                         runat="server"
                         ControlToValidate="txtPerekonnanimi"
                         ErrorMessage="Sisesta perekonnanimi!"
-                        ForeColor="Red"
-                        Display="Dynamic"
+                        Display="None"
                         ValidationGroup="LisaLiige"></asp:RequiredFieldValidator>
                 </InsertItemTemplate>
             </asp:TemplateField>
 
-            <asp:TemplateField HeaderText="Sunniaeg">
+            <asp:TemplateField HeaderText="Sünniaeg">
                 <InsertItemTemplate>
                     <asp:TextBox ID="txtSunniaeg" runat="server"
-                        Text='<%# Bind("sunniaeg") %>'></asp:TextBox>
+                        TextMode="Date"
+                        Text='<%# Bind("sunniaeg", "{0:yyyy-MM-dd}") %>'></asp:TextBox>
                 </InsertItemTemplate>
             </asp:TemplateField>
 
@@ -119,13 +126,14 @@
                 </InsertItemTemplate>
             </asp:TemplateField>
 
-            <asp:CommandField ShowInsertButton="True"
+            <asp:CommandField
+                ShowInsertButton="True"
                 InsertText="Lisa liige"
+                CancelText="Tühista"
                 ValidationGroup="LisaLiige" />
         </Fields>
     </asp:DetailsView>
 
-    <!-- Источник данных для добавления -->
     <asp:SqlDataSource ID="SqlDataSourceLisaLiige" runat="server"
         ConnectionString="<%$ ConnectionStrings:Treener2ConnectionString1 %>"
         InsertCommand="INSERT INTO [SpordiLiikmeSet] ([eesnimi], [perekonnanimi], [sunniaeg], [epost], [telefonnumber]) VALUES (@eesnimi, @perekonnanimi, @sunniaeg, @epost, @telefonnumber)">

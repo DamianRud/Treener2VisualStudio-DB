@@ -1,21 +1,37 @@
-﻿/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+﻿
+body {
+    background-color: whitesmoke;
+    font-family: Arial;
+    color: black;
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
+h1, h2, h3 {
+    color: darkblue;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .body-content {
-        padding: 0;
-    }
+table {
+    background-color: white;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+th {
+    background-color: lightblue;
+}
+
+input, select {
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+a {
+    color: blue;
+}
+
+footer {
+    color: gray;
 }
